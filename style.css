@@ -12,13 +12,16 @@ body {
   font-size: 40px;
   text-align: center;
   font-weight: bold;
+  padding-top: 50px;
 }
 
 #title_sub {
   text-align: center;
   font-weight: bold;
-  padding: 50px;
+  /*padding: 50px;*/
   font-size: 25px;
+  font-style: italic;
+  padding-top: 15px;
 }
 
 * {
