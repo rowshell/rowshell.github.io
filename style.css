@@ -1,20 +1,16 @@
-* {
-  font-family: 'Raleway', sans-serif;
-}
-
 body {
     background-color: white;
 }
 
 #navigation > li {
   display: inline;
-  padding: 50px;
+  padding: 30px;
   font-size: 20px;
-  margin: 40px 10px 10px 40px;
+  padding-top: 30px;
 }
 
-a {
-  transition: color 0.2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+* {
+  font-family: 'Raleway', sans-serif;
 }
 
 a:visited {
@@ -23,4 +19,15 @@ a:visited {
 
 a:active {
     color: black;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
