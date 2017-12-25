@@ -11,11 +11,13 @@ body {
 #title > #title_subheading {
   font-weight:bold;
   position: center;
+  padding: 50px;
 }
 
 #title {
   font-size: 40px;
   position: center;
+  font-weight:bold;
 }
 
 * {
