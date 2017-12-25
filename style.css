@@ -15,6 +15,11 @@ body {
   padding-top: 50px;
 }
 
+#title > span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
 #title_sub {
   text-align: center;
   font-weight: bold;
@@ -23,6 +28,12 @@ body {
   font-style: italic;
   padding-top: 15px;
 }
+
+#title_sub > span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
 
 * {
   font-family: 'Raleway', sans-serif;
