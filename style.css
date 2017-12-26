@@ -7,6 +7,8 @@ body {
   padding: 20px;
   font-size: 20px;
   /*width: 100%;*/
+  float: left;
+  line-height:50px;
 }
 
 #title {
@@ -36,8 +38,18 @@ span {
 
 #contact_buttons > li {
   padding: 10px;
-  padding-top: calc(100% - 50px);
+  padding-top: calc(20% - 150px);
   display: inline;
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+
+#main_heart {
+  float: left;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
 }
 
 * {
