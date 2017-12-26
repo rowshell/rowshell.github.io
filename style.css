@@ -30,8 +30,13 @@ span {
   padding-top: 15px;
 }
 
-#heart_with_hand_pic > img {
-  padding-top: calc(20% - 50px);
+#heart_with_hand_pic {
+  padding-top: calc(20% - 150px);
+}
+
+#contact_buttons {
+  padding: 10px;
+  padding-top: calc(100% - 50px);
 }
 
 * {
