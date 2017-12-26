@@ -39,15 +39,11 @@ span {
   padding: 10px;
   padding-top: calc(20% - 150px);
   display: inline;
-  width: 35px;
-  height: 35px;
   position: relative;
 }
 
 #main_heart {
   float: left;
-  width: 20px;
-  height: 20px;
   padding: 20px;
 }
 
