@@ -30,11 +30,6 @@ span {
   padding-top: 15px;
 }
 
-#heart_with_hand_pic > img.center {
-  display: block;
-  margin: 0 auto;
-}
-
 * {
   font-family: 'Raleway', sans-serif;
 }
