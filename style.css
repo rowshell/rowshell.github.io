@@ -6,7 +6,7 @@ body {
   display: inline;
   padding: 20px;
   font-size: 20px;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 #title {
@@ -34,9 +34,10 @@ span {
   padding-top: calc(20% - 150px);
 }
 
-#contact_buttons {
+#contact_buttons > li {
   padding: 10px;
   padding-top: calc(100% - 50px);
+  display: inline;
 }
 
 * {
