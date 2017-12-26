@@ -13,7 +13,7 @@ body {
   font-size: 40px;
   text-align: center;
   font-weight: bold;
-  padding-top: calc(20% - 50px);
+  padding-top: 15px;
 }
 
 span {
@@ -28,6 +28,10 @@ span {
   font-size: 25px;
   font-style: italic;
   padding-top: 15px;
+}
+
+#heart_with_hand_pic > img {
+  padding-top: calc(20% - 50px);
 }
 
 * {
