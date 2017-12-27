@@ -3,11 +3,19 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Rochelle Manongdo</title>
     <link rel="shortcut icon" href="/Images/heart_shape.png" type="image/png">
+
+    <script>
+      $(document).ready(function(){
+        var height = $(window).height();   // returns height of browser viewport
+        $('#contact_buttons > li').top(height - 10);
+      });
+    </script>
   </head>
   
   <body>
@@ -34,7 +42,7 @@
         </div>
       </div>  
 
-      <div class="clearfooter"></div>
+      <!---<div class="clearfooter"></div>-->
 
       <div id="footer">
         <div id="contact_buttons">
@@ -55,16 +63,16 @@
         .when("/", {
           templateUrl : "index.html"  
         })  
-        .when("/#!Home", {
+        .when("/#!/Home", {
           templateUrl : "index.html"
         })
-        .when("/#!About", {
+        .when("/#!/About", {
           templateUrl : "about.html"
         })
-        .when("/#!Experience", {
+        .when("/#!/Experience", {
           templateUrl : "experience.html"
         })
-        .when("/#!Contact", {
+        .when("/#!/Contact", {
           templateUrl : "contact.html"
         });
       });

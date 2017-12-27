@@ -10,7 +10,7 @@ body {
   float: left;
 }
 
-#navigation:hover {
+#navigation > li:hover {
   opacity: 0.6;
 }
 
@@ -60,7 +60,7 @@ span {
 
 #container {
   min-height: 100%;
-  margin-bottom: -330px;
+  /*margin-bottom: -330px;*/
   position: relative;
 }
 
@@ -69,10 +69,10 @@ span {
   position: absolute;
 }
 
-.clearfooter {
+/*.clearfooter {
   height: 330px;
   clear: both;
-}
+}*/
 
 * {
   font-family: 'Raleway', sans-serif;
