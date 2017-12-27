@@ -3,7 +3,6 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -12,37 +11,64 @@
   </head>
   
   <body>
-    <div id="container">
-      <div id="main_heart">
-        <img src="/Images/heart_shape.png" style="width:20px;height:20px;"></li>
-      </div>
-      <div id="navigation">
-        <li style="list-style-type: none;"><a href="#!Home" style="text-decoration: none;">HOME</a></li>
-        <li style="list-style-type: none;"><a href="#!About" style="text-decoration: none;">ABOUT</a></li>
-        <li style="list-style-type: none;"><a href="#!Experience" style="text-decoration: none;">EXPERIENCE</a></li>
-        <li style="list-style-type: none;"><a href="#!Contact" style="text-decoration: none;">SAY HELLO!</a></li>
-      </div>
+    <div ng-app="app">
+      <div id="container">
+        <div id="main_heart">
+          <img src="/Images/heart_shape.png" style="width:20px;height:20px;"></li>
+        </div>
+        <div id="navigation">
+          <li style="list-style-type: none;"><a href="#!Home" style="text-decoration: none;">HOME</a></li>
+          <li style="list-style-type: none;"><a href="#!About" style="text-decoration: none;">ABOUT</a></li>
+          <li style="list-style-type: none;"><a href="#!Experience" style="text-decoration: none;">EXPERIENCE</a></li>
+          <li style="list-style-type: none;"><a href="#!Contact" style="text-decoration: none;">SAY HELLO!</a></li>
+        </div>
 
-      <div id="heart_with_hand_pic">
-        <div align="center"><img src="/Images/hand_with_heart.png" style="width:128px;height:128px;"></div>
-      </div>
-      <div id="title">
-        <span> >_ Hello, I'm Rochelle!</span>
-      </div>
-      <div id="title_sub">
-        <span>*wave* and welcome to my website!</span>
-      </div>
-    </div>  
+        <div id="heart_with_hand_pic">
+          <div align="center"><img src="/Images/hand_with_heart.png" style="width:128px;height:128px;"></div>
+        </div>
+        <div id="title">
+          <span> >_ Hello, I'm Rochelle!</span>
+        </div>
+        <div id="title_sub">
+          <span>*wave* and welcome to my website!</span>
+        </div>
+      </div>  
 
-    <div class="clearfooter"></div>
+      <div class="clearfooter"></div>
 
-    <div id="footer">
-      <div id="contact_buttons">
-        <li style="list-style-type: none;"><a href="mailto:rmanongd@ucsd.edu" target="_blank"><img src="/Images/envelope_button.png" style="width:40px;height:35px;"></a></li>
-        <li style="list-style-type: none;"><a href="https://www.linkedin.com/in/rmanongdo/" target="_blank"><img src="/Images/linkedin_button.png" style="width:35px;height:35px;"></a></li>
-        <li style="list-style-type: none;"><a href="https://github.com/rowshell" target="_blank"><img src="/Images/github_button.png" style="width:35px;height:35px;"></a></li>
-        <li style="list-style-type: none;"><a href="https://open.spotify.com/user/1287228723" target="_blank"><img src="/Images/spotify_button.png" style="width:35px;height:35px;"></a></li>
+      <div id="footer">
+        <div id="contact_buttons">
+          <li style="list-style-type: none;"><a href="mailto:rmanongd@ucsd.edu" target="_blank"><img src="/Images/envelope_button.png" style="width:40px;height:35px;"></a></li>
+          <li style="list-style-type: none;"><a href="https://www.linkedin.com/in/rmanongdo/" target="_blank"><img src="/Images/linkedin_button.png" style="width:35px;height:35px;"></a></li>
+          <li style="list-style-type: none;"><a href="https://github.com/rowshell" target="_blank"><img src="/Images/github_button.png" style="width:35px;height:35px;"></a></li>
+          <li style="list-style-type: none;"><a href="https://open.spotify.com/user/1287228723" target="_blank"><img src="/Images/spotify_button.png" style="width:35px;height:35px;"></a></li>
+        </div>
       </div>
     </div>
+
+    <div ng-view></div>
+
+    <script>
+      var app = angular.module("app", ["ngRoute"]);
+      app.config(function($routeProvider){
+        $routeProvider
+        .when("/", {
+          templateUrl : "index.html"  
+        })  
+        .when("/#!Home", {
+          templateUrl : "index.html"
+        })
+        .when("/#!About", {
+          templateUrl : "about.html"
+        })
+        .when("/#!Experience", {
+          templateUrl : "experience.html"
+        })
+        .when("/#!Contact", {
+          templateUrl : "contact.html"
+        });
+      });
+    </script>
+
   </body>
 </html>
