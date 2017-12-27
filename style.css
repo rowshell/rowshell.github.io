@@ -49,7 +49,7 @@ span {
   left: 0;
 }
 
-#contact_buttons:hover {
+#contact_buttons > li:hover {
   opacity: 0.6;
 }
 
