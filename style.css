@@ -40,10 +40,13 @@ span {
   /*padding-top: calc(20% - 150px);*/
   display: inline;
   /*position: relative;*/
-  position: absolute;
   right: 0;
   bottom: 5px;
   left: 0;
+}
+
+#contact_buttons > a img:hover {
+  opacity: 0.6;
 }
 
 #main_heart {
@@ -58,8 +61,8 @@ span {
 }
 
 #footer {
-  height: 330px;
-  position: relative;
+  /*height: 330px;*/
+  position: absolute;
 }
 
 .clearfooter {
