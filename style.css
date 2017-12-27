@@ -45,7 +45,7 @@ span {
   left: 0;
 }
 
-#contact_buttons > a img:hover {
+#contact_buttons > img:hover {
   opacity: 0.6;
 }
 
