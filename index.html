@@ -14,8 +14,8 @@
 
     <script>
       $(document).ready(function(){
-        var height = $(window).height();   // returns height of browser viewport
-        $('#contact_buttons > li').css({ padding-top: height-10 });
+        var height = $(window).height() - 50;   // returns height of browser viewport
+        $('#contact_buttons').css({ padding-top: height});
       });
     </script>
   </head>

@@ -39,6 +39,10 @@ span {
   padding-top: calc(20% - 150px);
 }
 
+#contact_buttons {
+  
+}
+
 #contact_buttons > li {
   padding: 10px;
   /*padding-top: calc(20% - 150px);*/
