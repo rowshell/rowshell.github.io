@@ -1,1 +1,62 @@
-<h1>Yo</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Rochelle Manongdo</title>
+    <link rel="shortcut icon" href="/Images/heart_shape.png" type="image/png">
+
+<!--     <script>
+      $(document).ready(function(){
+        var height = $(window).height(); 
+        $('#contact_buttons > li').css({ padding-top: height });
+      });
+    </script> -->
+  </head>
+  
+  <body>
+    <div id="container">
+      <div id="main_heart">
+        <img src="/Images/heart_shape.png" style="width:20px;height:20px;"></li>
+      </div>
+      <div id="navigation">
+        <li style="list-style-type: none;"><a href="index.html" style="text-decoration: none;">HOME</a></li>
+        <li style="list-style-type: none;"><a href="about.html" style="text-decoration: none;">ABOUT</a></li>
+        <li style="list-style-type: none;"><a href="experience.html" style="text-decoration: none;">EXPERIENCE</a></li>
+        <li style="list-style-type: none;"><a href="contact.html" style="text-decoration: none;">SAY HELLO!</a></li>
+      </div>
+      
+      <div id="me_pic">
+        <img src="/Images/me_pic.png" style="width:200px;height:500px;"></li>
+      </div>
+      <div id="about_me_section">
+        <div id="about_title">ABOUT ROCHELLE</div>
+        <div id="about_par">
+          <li style="list-style-type: none;"><img src="/Images/location.png" style="width:20px;height:20px;">Based in San Diego, CA</li>
+          <li style="list-style-type: none;"><img src="/Images/grad_cap.png" style="width:20px;height:20px;">Fourth year undergraduate at University of California, San Diego</li> 
+          <li style="list-style-type: none;"><img src="/Images/eco_lightbulb.png" style="width:20px;height:20px;">Pursuing a Bachelor of Science in Computer Science with 
+            minors in Environmental Studies and Humanities</li>
+        </div>
+      </div>
+
+      <div id="copyright">
+        © 2017 ROCHELLE MANONGDO. ALL RIGHTS RESERVED.
+      </div>
+    </div>  
+
+    <!---<div class="clearfooter"></div>-->
+
+    <div id="footer">
+      <div id="contact_buttons">
+        <li style="list-style-type: none;"><a href="mailto:rmanongd@ucsd.edu" target="_blank"><img src="/Images/envelope_button.png" style="width:40px;height:35px;"></a></li>
+        <li style="list-style-type: none;"><a href="https://www.linkedin.com/in/rmanongdo/" target="_blank"><img src="/Images/linkedin_button.png" style="width:35px;height:35px;"></a></li>
+        <li style="list-style-type: none;"><a href="https://github.com/rowshell" target="_blank"><img src="/Images/github_button.png" style="width:35px;height:35px;"></a></li>
+        <li style="list-style-type: none;"><a href="https://open.spotify.com/user/1287228723" target="_blank"><img src="/Images/spotify_button.png" style="width:35px;height:35px;"></a></li>
+      </div>
+    </div>
+    <div ng-view></div>
+  </body>
+</html>
